@@ -5,12 +5,12 @@ var objeto = [{ nombre : "Arabela", apellido : "Rojas", rol : "T.A", cumpleanios
               { nombre : "Gian", apellido : "Corzo", rol : "Profesor", cumpleanios : "23 de enero" }];
 
 var resultado = "";
-function mostrar_nombre(){
+function datos(){
   for(var i in objeto){
     resultado +=  "<li>Nombre:" + objeto[i].nombre + "<br>" +
-                  "<li>Apellidos:" objeto[i].apellido + "<br>" +
-                  "<li>Rol:" objeto[i].rol + "<br>"+
-                  "<li>Cumpleaños:" objeto[i].cumpleanios + "<br>" + "<br>";
+                  "<li>Apellidos:" + objeto[i].apellido + "<br>" +
+                  "<li>Rol:" + objeto[i].rol + "<br>"+
+                  "<li>Cumpleaños:" + objeto[i].cumpleanios + "<br>" + "<br>";
   }
   document.getElementById("imprimir").innerHTML = resultado;
 }
